@@ -12,6 +12,7 @@ class DroneProduct(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
     price = models.DecimalField(max_digits=4,decimal_places=2)
     description = models.TextField(max_length=100)
+    # new comment
 
 
 
