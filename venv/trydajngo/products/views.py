@@ -1,14 +1,14 @@
 from django.shortcuts import render
-from .models import Product
+from .models import Product, DroneProduct
 from .forms import ProductForm, RawProductFrom
 
 
 def product_detail_view(request, *args, **kwargs):
-    obj = Product.objects.get(id=10) ## get the list of all prods
+    products = DroneProduct.objects.all()df
     context = {
-        'object': obj
+        'products': products
     }
-    return render(request,'products/product_detail.html', context)
+    return render(request, 'products/product_detail.html', context)
 
 
 def product_create_view1(request):

@@ -12,7 +12,8 @@ class ProductForm(forms.ModelForm):
             'description'
         ]
 
-class RawProductFrom(forms.Form):
+
+class RawProductFrom(forms.ModelForm):
     name = forms.CharField()
     overview = forms.CharField()
     price = forms.DecimalField(initial=199.99)
