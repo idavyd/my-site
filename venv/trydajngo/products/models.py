@@ -12,7 +12,7 @@ class DroneProduct(models.Model):
     brand = models.CharField(max_length=30)
     model_name = models.CharField(max_length=30)
     date_added = models.DateTimeField(auto_now_add=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
+    price = models.DecimalField(max_digits=6, decimal_places=2, )
     description = models.TextField(max_length=100)
 
 
